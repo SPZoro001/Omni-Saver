@@ -1,0 +1,11 @@
+# Render.com Deployment Configuration for Node.js Service
+
+services:
+  - type: web
+    name: Omni-Saver
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    region: oregon
+    plan: starter
